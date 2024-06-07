@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="con-encabezado">
+            <img src="img/cic.png" alt="Logo del Colegio Inmaculada Concepcion">
+            <p>Colegio Inmaculada Concepcion</p>
+        </div>
+    </header>
+    <nav>
+        <div class="con-nav">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Cursos</a>
+            <a href="#">Galeria</a>
+            <a href="#">Contactos</a>
+        </div>
+    </nav>
+    <main>
+        <center>
+            <img src="img/emilie.png" alt="Imagen representativa" height="300" width="960">
+        </center>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.7615244024571!2d-57.60508262078778!3d-25.302655248990465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da864b0c6189d%3A0x80d22ab05496de3c!2sColegio%20L'Immacul%C3%A9e%20Conception!5e0!3m2!1ses!2spy!4v1645187566653!5m2!1ses!2spy" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="f-contenedor">
+            <section class="servicio">
+                <div>
+                    <h3>Espiritualidad</h3>
+                    <a href="pag/espiritualidad.html" target="_blank">
+                        <img src="img/fe.jpg" id="img-section1" alt="Imagen de espiritualidad">
+                    </a>
+                </div>
+                <div>
+                    <h3>Enseñanza</h3>
+                    <a href="pag/enseñanza.html" target="_blank">
+                        <img src="img/en.jpg" id="img-section2" alt="Imagen de enseñanza">
+                    </a>
+                </div>
+                <div>
+                    <h3>Solidaridad</h3>
+                    <a href="pag/solidaridad.html" target="_blank">
+                        <img src="img/sol.jpg" id="img-section3" alt="Imagen de solidaridad">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="con-footer">
+        <p>&copy; 2024 Colegio Inmaculada Concepción. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".servicio");
+            sections.forEach(section => {
+                section.classList.add("appear");
+                setTimeout(() => {
+                    section.classList.add("appear-active");
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
